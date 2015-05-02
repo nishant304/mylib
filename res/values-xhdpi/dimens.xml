@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layout_footer -->
+    <dimen name="layout_footer_drawable_padding">-25dp</dimen>
+
+    <!-- layout header -->
+    <dimen name="layout_header_icon_margin">3dp</dimen>
+    <dimen name="layout_my_profile_username_textsize">24sp</dimen>
+    <dimen name="layout_my_profile_headline_textsize">14sp</dimen>
+    <dimen name="layout_my_profile_details_label_textsize">18sp</dimen>
+    <dimen name="layout_my_profile_details_textsize">15sp</dimen>
+
+    <!-- standard padding sizes -->
+    <dimen name="small_padding">5dip</dimen>
+    <dimen name="medium_padding">10dip</dimen>
+    <dimen name="large_padding">15dip</dimen>
+    <dimen name="xlarge_padding">20dip</dimen>
+    <dimen name="xxlarge_padding">35dip</dimen>
+
+    <!-- text sizes -->
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="medium_text_size">13sp</dimen>
+
+    <!-- MapUserFragement : Round Circle Dimension -->
+    <dimen name="round_circle_small_icon_margin">45dp</dimen>
+    <dimen name="circleRadius">35dp</dimen>
+    <dimen name="greenGrayBotder">3dp</dimen>
+    <dimen name="blueBorder">4dp</dimen>
+    <dimen name="wink_count_text_size">15sp</dimen>
+
+    <!-- filter screen -->
+    <dimen name="layout_filter_label_textsize">17sp</dimen>
+    <dimen name="layout_filter_text_padding">6dp</dimen>
+    <dimen name="layout_filter_rangeBar_padding">0dp</dimen>
+
+    <!-- map animation dimension -->
+    <dimen name="map_drawer_margin_on_button">190dp</dimen>
+    <dimen name="margin_transparent_user_drawer">270dp</dimen>
+    <dimen name="margin_transparent_user_drawer_map">70dp</dimen>
+    <!-- Brower Friend Fragment -->
+    <dimen name="dot_list_padding">3dp</dimen>
+
+    <!-- Wink Fragment -->
+
+    <dimen name="wink_user_name_sp">22sp</dimen>
+    <dimen name="wink_user_header_sp">13sp</dimen>
+    <dimen name="wink_user_image_dp">290dp</dimen>
+    <dimen name="wink_margin_left_dp">30dp</dimen>
+    <dimen name="wink_margin_top_button_dp">10dp</dimen>
+    <dimen name="wink_margin_right_dp">25dp</dimen>
+    <dimen name="wink_margin_dp">15dp</dimen>
+
+    <!-- Location Drawer -->
+
+    <dimen name="location_drawer_sp_19">19sp</dimen>
+    <dimen name="location_drawer_sp_12">12sp</dimen>
+    <dimen name="location_drawer_sp_13">13sp</dimen>
+    <dimen name="location_drawer_sp_14">14sp</dimen>
+    <dimen name="location_drawer_desc_sp">12sp</dimen>
+    <dimen name="location_drawer_header_height">9dp</dimen>
+    <dimen name="location_drawer_margin_10">10dp</dimen>
+    <dimen name="location_drawer_margin_20">20dp</dimen>
+    <dimen name="location_drawer_margin_5">5dp</dimen>
+    <dimen name="location_drawer_margin">15dp</dimen>
+    <dimen name="location_drawer_user_image">75dp</dimen>
+
+    <!-- Add Location Dimen -->
+    <dimen name="top_margin_on_map_add_location">290dp</dimen>
+
+    <!-- passcode dialog -->
+    <dimen name="passcode_cross_button_margin_top">72dp</dimen>
+    <dimen name="passcode_error_message_text_size">15sp</dimen>
+
+</resources>

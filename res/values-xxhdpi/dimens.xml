@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layout_footer -->
+    <dimen name="layout_footer_drawable_padding">-25dp</dimen>
+
+    <!-- layout header -->
+    <dimen name="layout_header_icon_margin">3dp</dimen>
+    <dimen name="layout_my_profile_username_textsize">24sp</dimen>
+    <dimen name="layout_my_profile_headline_textsize">14sp</dimen>
+    <dimen name="layout_my_profile_details_label_textsize">18sp</dimen>
+    <dimen name="layout_my_profile_details_textsize">15sp</dimen>
+    <dimen name="small_text_size">13sp</dimen>
+    <dimen name="very_small_text_size">9sp</dimen>
+    <dimen name="medium_text_size">15sp</dimen>
+    <dimen name="layout_user_profile_details_label_textsize">18sp</dimen>
+    <dimen name="layout_user_profile_details_textsize">15sp</dimen>
+
+    <!-- MapUserFragement : Round Circle Dimension -->
+    <dimen name="round_circle_small_icon_margin">43dp</dimen>
+    <dimen name="circleRadius">22dp</dimen>
+    <dimen name="greenGrayBotder">1.5dp</dimen>
+    <dimen name="blueBorder">4dp</dimen>
+    <dimen name="wink_count_text_size">15sp</dimen>
+    <dimen name="location_label_text_size">15sp</dimen>
+
+    <!-- Browse Screen -->
+    <dimen name="browse_screen_name_text_size">13sp</dimen>
+    <dimen name="browse_screen_distance_text_size">10sp</dimen>
+
+    <!-- map animation dimension -->
+    <!-- map animation dimension -->
+    <dimen name="map_drawer_margin_on_button">200dp</dimen>
+    <dimen name="margin_transparent_user_drawer">270dp</dimen>
+
+    <!-- filter Screen -->
+    <dimen name="layout_filter_label_textsize">17sp</dimen>
+    <dimen name="layout_filter_expandable_list_textsize">13sp</dimen>
+    <dimen name="layout_filter_rangeBar_padding">7dp</dimen>
+    <dimen name="layout_filter_text_padding">7dp</dimen>
+    <dimen name="layout_filter_left_vertical_padding">15dp</dimen>
+    <dimen name="filter_bottom_right_buttons_padding">63dp</dimen>
+
+    <!-- Confirmation Screens -->
+    <dimen name="confirm_favorite_text_size">38sp</dimen>
+    <dimen name="confirm_flame_toggle_text_size">38sp</dimen>
+    <dimen name="confirm_wink_text_size">38sp</dimen>
+    <dimen name="confirm_friend_text_size">38sp</dimen>
+    <dimen name="dont_prompt_anymore_text_size">22sp</dimen>
+    <dimen name="center_image_margin_top">126dp</dimen>
+    <dimen name="center_text_margin_top">48dp</dimen>
+    <dimen name="confirm_friend_tip_margin_left">18dp</dimen>
+    <dimen name="confirm_friend_tip_margin_bottom">30dp</dimen>
+    <dimen name="confirm_friend_tip_text_size">18sp</dimen>
+    <dimen name="confirm_delete_text_size">25sp</dimen>
+    <dimen name="check_box_margin_left">18dp</dimen>
+    <dimen name="check_box_margin_bottom">42dp</dimen>
+    <dimen name="dont_prompt_text_margin_left">5dp</dimen>
+    <dimen name="cross_button_margin_bottom">14dp</dimen>
+
+    <!-- Splash Screen -->
+    <!--
+    <dimen name="splash_screen_options_text_size">19sp</dimen>
+    <dimen name="splash_screen_claim_code_margin_bottom">50dp</dimen>
+    <dimen name="splash_screen_claim_code_margin_top">8dp</dimen>
+    <dimen name="splash_screen_let_me_in_margin_bottom">17dp</dimen>
+    -->
+    <dimen name="splash_screen_button_option_margin_bottom">73dp</dimen>
+    <dimen name="splash_screen_button_option_left_margin">36dp</dimen>
+    <dimen name="splash_screen_button_option_right_margin">36dp</dimen>
+    <dimen name="splash_screen_logo_top_margin">147dp</dimen>
+
+    <!-- Wink Fragment -->
+
+    <dimen name="wink_user_name_sp">22sp</dimen>
+    <dimen name="wink_user_header_sp">13sp</dimen>
+    <dimen name="wink_user_image_dp">290dp</dimen>
+    <dimen name="wink_margin_left_dp">30dp</dimen>
+    <dimen name="wink_margin_top_button_dp">10dp</dimen>
+    <dimen name="wink_margin_right_dp">25dp</dimen>
+    <dimen name="wink_margin_dp">15dp</dimen>
+
+    <!-- Location Drawer -->
+
+    <dimen name="location_drawer_sp_19">19sp</dimen>
+    <dimen name="location_drawer_sp_12">12sp</dimen>
+    <dimen name="location_drawer_sp_13">13sp</dimen>
+    <dimen name="location_drawer_sp_14">14sp</dimen>
+    <dimen name="location_drawer_desc_sp">12sp</dimen>
+    <dimen name="location_drawer_header_height">9dp</dimen>
+    <dimen name="location_drawer_margin_10">10dp</dimen>
+    <dimen name="location_drawer_margin_20">20dp</dimen>
+    <dimen name="location_drawer_margin_5">5dp</dimen>
+    <dimen name="location_drawer_margin">12dp</dimen>
+    <dimen name="location_drawer_user_image">73dp</dimen>
+
+    <!-- Add Location -->
+    <dimen name="add_location_drawer_margin_8">8dp</dimen>
+    <dimen name="add_location_drawer_sp_13">13sp</dimen>
+    <dimen name="add_location_drawer_sp_12">12sp</dimen>
+    <dimen name="add_location_drawer_sp_11">11sp</dimen>
+    <dimen name="add_location_drawer_margin_10">10dp</dimen>
+    <dimen name="add_location_drawer_margin_20">20dp</dimen>
+    <dimen name="add_location_drawer_margin_15">15dp</dimen>
+    <dimen name="add_location_drawer_trans">230dp</dimen>
+
+    <!-- Setting -->
+    <dimen name="settings_margin_8">8dp</dimen>
+    <dimen name="settings_margin_10">10dp</dimen>
+    <dimen name="settings_margin_20">20dp</dimen>
+    <dimen name="settings_margin_15">15dp</dimen>
+
+    <!-- rating bar -->
+    <dimen name="small_rating_bar_height">14.66dp</dimen>
+    <dimen name="medium_rating_bar_height">24dp</dimen>
+    <dimen name="large_rating_bar_height">35.66dp</dimen>
+
+    <!-- Animation values -->
+    <dimen name="max_screen_height">640dp</dimen>
+    <dimen name="min_screen_height">0dp</dimen>
+
+    <!-- Add Location Dimen -->
+    <dimen name="top_margin_on_map_add_location">317dp</dimen>
+    <dimen name="activity_call_pop_up_accept_decline_button_padding">16dp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+
+    <!-- account retrieval screen -->
+    <dimen name="acc_retrieval_lable_size">20sp</dimen>
+    <dimen name="acc_retrieval_text_size">18sp</dimen>
+
+    <!-- create profile screen -->
+    <dimen name="create_profile_heading_size">24sp</dimen>
+    <dimen name="create_profile_editText_size">20.66sp</dimen>
+    <dimen name="create_profile_image_size">180.66dp</dimen>
+
+    <!-- sms verification dialog -->
+
+    <dimen name="sms_code_entered_text_size">23sp</dimen>
+
+    <!-- passcode dialog -->
+
+    <dimen name="passcode_entered_text_size">48sp</dimen>
+
+</resources>

@@ -1,0 +1,114 @@
+buildscript {
+    repositories { mavenCentral() }
+    dependencies { classpath 'com.android.tools.build:gradle:1.0.0' }
+}
+
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+    maven { url "http://23.239.27.184/maven/" }
+}
+
+dependencies {
+    compile 'com.wecam.dependency:google-play-services_lib:0.1'
+    compile 'com.wecam.dependency:simple-crop-image-lib:0.1'
+    compile 'net.hockeyapp.android:HockeySDK:3.5.0'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'org.apache.httpcomponents:httpmime:4.2.5'
+    compile fileTree(dir: 'libs', include: '*.jar')
+    
+}
+android {
+
+    buildToolsVersion "20"
+    compileSdkVersion 20
+    /*
+     dev applicationId : "com.wecamchat.aviddev"
+     stag applicationId : "com.wecamchat.avidstag"
+     prod applicationId : "com.wecamchat.avid"
+     */
+    defaultConfig {
+        applicationId "com.wecamchat.aviddev"
+        versionCode 1
+        versionName "VERSION_NAME"
+    }
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+android {
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+//        androidTest.setRoot('tests')
+    }
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+
+android {
+    signingConfigs {
+        release {
+            /*
+             runProguard true
+             proguardFiles getDefaultProguardFile('proguard-android.txt'), \
+             'proguard-rules.txt'
+             */
+            storeFile file("assets/debug.keystore")
+            storePassword "9sum5is14"
+            keyAlias "mancrunch"
+            keyPassword "9sum5is14"
+        }
+        /*
+         debug {
+         storeFile file("assets/debug.keystore")
+         storePassword: "android"
+         Keyalias: "androiddebugkey"
+         Keypassword: "android"
+         }
+         */
+    }
+
+    buildTypes {
+        /*debuggable true*/
+        release {
+            signingConfig signingConfigs.release
+            /*
+             applicationVariants.all { variant ->
+             def file = variant.outputFile
+             variant.outputFile = new File(file.parent, file.name.replace(".apk", "-" + defaultConfig.versionName + ".apk")) 
+             }*/
+        }
+    }
+    
+    task copyDeps(type: Copy) {
+  from configurations.compile
+  into 'libs/doNotCommit'
+}
+}

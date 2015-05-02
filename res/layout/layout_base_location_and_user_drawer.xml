@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color_code" >
+
+    <com.wecamchat.aviddev.util.view.CustomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/layout_userdrawer_drag_view"
+                    layout="@layout/layout_friends_profile_header" />
+
+                <include layout="@layout/layout_friend_profile_headline_bar" />
+
+                <include layout="@layout/layout_friends_profile_body" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location_drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/layout_locationdrawer_drag_view"
+                    layout="@layout/layout_uperview_locationdrawer" />
+
+                <include layout="@layout/layout_lowerview_locationdrawer" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.wecamchat.aviddev.util.view.CustomScrollView>
+
+    <!--
+         <include
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginRight="5dp"
+        layout="@layout/layout_friends_profile_right_bar" />
+    -->
+
+</RelativeLayout>

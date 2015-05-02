@@ -1,0 +1,178 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="avid_progressbar_style" parent="@android:style/Widget.Holo.Light.ProgressBar.Large" />
+
+    <style name="weight_one">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">desc</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="fill_parent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="wrap_content.user_profile_label_style">
+        <item name="android:textColor">@color/user_profile_label_color</item>
+        <item name="android:textSize">@dimen/layout_user_profile_details_label_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="wrap_content.user_profile_detail_style">
+        <item name="android:textColor">@color/user_profile_detail_color</item>
+        <item name="android:textSize">@dimen/layout_user_profile_details_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fill_parent.orientation_horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="fragment_filter_label_style">
+        <item name="android:paddingTop">@dimen/medium_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/layout_filter_label_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fragment_filter_expandable_list_style">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="height_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="width_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_weight_one">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">desc</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="wrap_weight_one_vertical">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">desc</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- For custom rating bar -->
+    <style name="CustomRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_small</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:minHeight">@dimen/small_rating_bar_height</item>
+        <item name="android:maxHeight">@dimen/small_rating_bar_height</item>
+    </style>
+
+    <!-- For custom rating bar -->
+    <style name="CustomRatingBarMedium" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_medium</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:minHeight">@dimen/medium_rating_bar_height</item>
+        <item name="android:maxHeight">@dimen/medium_rating_bar_height</item>
+    </style>
+
+    <!-- For custom rating bar -->
+    <style name="CustomRatingBarLarge" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_large</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:minHeight">@dimen/large_rating_bar_height</item>
+        <item name="android:maxHeight">@dimen/large_rating_bar_height</item>
+    </style>
+
+    <style name="wrap_width_weight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap_width_weight.red_rounded_btn">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/incoming_call_popup_accept_button_selector</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/white_color_code</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="wrap_width_weight.green_rounded_btn">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/incoming_call_popup_decline_button_selector</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/white_color_code</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

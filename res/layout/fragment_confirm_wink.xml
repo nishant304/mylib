@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_color_code" >
+
+    <ImageView
+        android:id="@+id/iv_confirm_wink_image"
+        style="@style/wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/center_image_margin_top"
+        android:background="@drawable/confirm_favorite_ic" />
+
+    <com.wecamchat.aviddev.util.view.CustomTextView
+        android:id="@+id/tv_confirm_wink_text"
+        style="@style/wrap_content"
+        android:layout_below="@id/iv_confirm_wink_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/center_text_margin_top"
+        android:text="@string/confirm_wink_text"
+        android:textColor="@color/white_color_code"
+        android:textSize="@dimen/confirm_wink_text_size"
+        app:ctypeface="GlyphaLTStd.otf" />
+
+    <CheckBox
+        android:id="@+id/cb_confirm_wink_dont_prompt"
+        style="@style/wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/check_box_margin_bottom"
+        android:layout_marginLeft="@dimen/check_box_margin_left"
+        android:background="@drawable/selector_dont_prompt_anymore"
+        android:button="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/iv_confirm_wink_no"
+        style="@style/wrap_content"
+        android:layout_above="@+id/iv_confirm_wink_yes"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/cross_ic_3x" />
+
+    <ImageView
+        android:id="@+id/iv_confirm_wink_yes"
+        style="@style/wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/tick_ic_3x" />
+
+    <com.wecamchat.aviddev.util.view.CustomTextView
+        android:id="@+id/tv_confirm_wink_dont_prompt"
+        style="@style/wrap_content"
+        android:layout_alignTop="@+id/cb_confirm_wink_dont_prompt"
+        android:layout_marginLeft="@dimen/dont_prompt_text_margin_left"
+        android:layout_toRightOf="@+id/cb_confirm_wink_dont_prompt"
+        android:text="@string/dont_prompt_anymore_text"
+        android:textColor="@color/white_color_code"
+        android:textSize="@dimen/dont_prompt_anymore_text_size"
+        app:ctypeface="GlyphaLTStd.otf" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_parent"
+    android:background="@drawable/user_bg" >
+
+    <ScrollView
+        style="@style/match_parent"
+        android:background="@drawable/wink_bg"
+        android:padding="@dimen/wink_margin_dp" >
+
+        <RelativeLayout style="@style/match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_wink"
+                style="@style/match_wrap" >
+
+                <com.wecamchat.aviddev.util.view.CircularImageView
+                    android:id="@+id/iv_location_drawer_userimage"
+                    android:layout_width="@dimen/wink_user_image_dp"
+                    android:layout_height="@dimen/wink_user_image_dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/wink_margin_dp"
+                    android:src="@drawable/user_image" />
+
+                <ImageView
+                    android:id="@+id/iv_location_drawer_small_icon"
+                    style="@style/wrap_content"
+                    android:layout_alignRight="@+id/iv_location_drawer_userimage"
+                    android:layout_marginRight="@dimen/wink_margin_right_dp"
+                    android:layout_marginTop="@dimen/wink_margin_dp"
+                    android:background="@drawable/user_theme_ic" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/wink_user_image_dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_wink"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/wink_margin_dp"
+                android:background="@drawable/location_drawer_wink_text_rect"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/wink_margin_dp" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:text="@string/wink_user_name"
+                    android:textColor="@color/wink_user_name_color"
+                    android:textSize="@dimen/wink_user_name_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:layout_marginTop="@dimen/wink_margin_top_button_dp"
+                    android:gravity="center_horizontal"
+                    android:lines="2"
+                    android:text="@string/wink_user_header"
+                    android:textColor="@color/wink_user_name_color"
+                    android:textSize="@dimen/wink_user_header_sp" />
+
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:layout_marginBottom="@dimen/wink_margin_top_button_dp"
+                    android:layout_marginTop="@dimen/wink_margin_dp"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        style="@style/wrap_content"
+                        android:background="@drawable/wink_grey_ic" />
+
+                    <ImageButton
+                        style="@style/wrap_content"
+                        android:layout_marginLeft="@dimen/wink_margin_left_dp"
+                        android:background="@drawable/grey_star_ic" />
+
+                    <ImageButton
+                        style="@style/wrap_content"
+                        android:layout_marginLeft="@dimen/wink_margin_left_dp"
+                        android:background="@drawable/wink_active_ic" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

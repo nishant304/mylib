@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_transparent_user_drawer"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/white_color_code"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.wecamchat.aviddev.util.view.CircularImageView
+                android:id="@+id/ivd_userdrawer_h_userimage"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/user_image" />
+
+            <com.wecamchat.aviddev.util.view.CircularImageView
+                android:id="@+id/iv_userdrawer_h_userimage1"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/user_image" />
+
+            <com.wecamchat.aviddev.util.view.CircularImageView
+                android:id="@+id/iv_usesrdrawer_h_userimage2"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/user_image" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/horizontalScrollView1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/user_theme_ic" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star_user_ic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_group_ic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cam_ic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_ic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_ic" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horizontalScrollView1" >
+
+        <ImageButton
+            android:id="@+id/tv_friendd_username"
+            style="@style/wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/list_dot" />
+
+        <RelativeLayout
+            android:id="@+id/rl_user_headline_bar"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_friendd_username"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:id="@+id/tv_userdrawerh_username"
+                style="@style/wrap_content"
+                android:layout_alignParentLeft="true"
+                android:maxLength="22"
+                android:text="Joseph Willams"
+                android:textColor="@color/avid_user_profile_username_headline_color"
+                android:textSize="@dimen/layout_my_profile_username_textsize"
+                android:textStyle="normal"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:id="@+id/tv_userdrawer_winkcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/smile_tag_ic"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"
+                android:text="536"
+                android:textColor="@color/wink_count_color"
+                android:textSize="@dimen/wink_count_text_size"
+                android:textStyle="bold"
+                app:ctypeface="GlyphaLTStd.otf" />
+        </RelativeLayout>
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_userdrawerh_userheadline"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_user_headline_bar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLength="80"
+            android:text="Here is the headline! user can write a short message here"
+            android:textColor="@color/avid_user_profile_username_headline_color"
+            android:textSize="@dimen/layout_my_profile_headline_textsize"
+            android:textStyle="normal"
+            app:ctypeface="GlyphaLTStd.otf" />
+    </RelativeLayout>
+
+</RelativeLayout>

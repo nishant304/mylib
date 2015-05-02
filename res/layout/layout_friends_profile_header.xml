@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@null" 
+    android:id="@+id/layout_friend_profile_user_image_root">
+
+    <FrameLayout
+        android:id="@+id/layout_friend_profile_user_image_viewPagerborder"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/layout_friend_profile_user_image_viewPager"
+            
+            android:layout_width="230dp"
+            android:layout_height="230dp" />
+
+        <com.wecamchat.aviddev.util.view.CircularImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_friend_profile_small_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/layout_friend_profile_user_image_viewPagerborder"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_theme_ic" />
+
+    <com.wecamchat.aviddev.util.view.SimpleViewPagerIndicator
+        android:id="@+id/layout_friends_dot_list_layout"
+        style="@style/wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_friend_profile_user_image_viewPagerborder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_friend_profile_block_icon"
+        style="@style/wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/mute_ic" />
+
+    <com.wecamchat.aviddev.util.view.CustomTextView
+        android:id="@+id/tv_user_wink_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/smile_tag_ic"
+        android:gravity="center_vertical|right"
+        android:paddingRight="15dp"
+        android:text="536"
+        android:textColor="@color/wink_count_color"
+        android:textSize="@dimen/wink_count_text_size"
+        android:textStyle="bold"
+        app:ctypeface="GlyphaLTStd.otf" />
+
+</RelativeLayout>

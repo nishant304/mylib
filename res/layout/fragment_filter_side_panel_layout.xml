@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/filter_bottom_right_buttons_padding"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/fragment_filter_wink_toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_filter_wink_toggle_button"
+        android:button="@null" />
+
+    <CheckBox
+        android:id="@+id/fragment_filter_user_toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:background="@drawable/selector_filter_user_toggle_button"
+        android:button="@null" />
+
+    <CheckBox
+        android:id="@+id/fragment_filter_star_toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:background="@drawable/selector_filter_star_toggle_button"
+        android:button="@null" />
+
+    <CheckBox
+        android:id="@+id/fragment_filter_hot_toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:background="@drawable/selector_filter_hot_toggle_button"
+        android:button="@null" />
+
+</LinearLayout>

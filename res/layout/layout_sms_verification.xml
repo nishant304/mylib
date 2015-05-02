@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layout_sms_verification_center_layout"
+        style="@style/wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/large_padding"
+        android:background="@drawable/sms_verification_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_verification_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/acc_retrieval_lable_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:text="@string/verification_code_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/acc_retrieval_lable_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <com.wecamchat.aviddev.util.view.CustomEditText
+            android:id="@+id/layout_sms_verification_code_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@drawable/verified_code_btn_bg"
+            android:gravity="center"
+            android:hint=""
+            android:singleLine="true"
+            android:textColor="@color/acc_retrieval_text_color"
+            android:textSize="@dimen/sms_code_entered_text_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/layout_sms_verification_center_layout"
+        android:layout_below="@id/layout_sms_verification_center_layout"
+        android:layout_marginTop="@dimen/xxlarge_padding"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/xxlarge_padding" >
+
+        <ImageView
+            android:id="@+id/layout_sms_verification_no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_retrieval_cross_ic"
+            android:onClick="onClickVCDialogNoButton" />
+
+        <ImageView
+            android:id="@+id/layout_sms_verification_yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/account_retrieval_tick_ic"
+            android:onClick="onClickVCDialogYesButton" />
+    </LinearLayout>
+
+</RelativeLayout>

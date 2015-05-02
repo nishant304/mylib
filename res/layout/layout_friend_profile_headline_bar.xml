@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_friend_username"
+            style="@style/wrap_content"
+            android:maxLength="22"
+            android:paddingTop="10dp"
+            android:text="Clark Davis"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/layout_my_profile_username_textsize"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_user_headline"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_friend_username"
+            android:layout_marginTop="10dp"
+            android:maxLength="80"
+            android:text="Here is the headline! user can write a short message here"
+            android:textColor="@color/avid_user_profile_username_headline_color"
+            android:textSize="@dimen/layout_my_profile_headline_textsize"
+            android:textStyle="normal"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_user_last_seen_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_headline"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Active 2 hours ago"
+            android:textColor="@color/user_profile_last_seen_time_color"
+            android:textSize="@dimen/small_text_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_user_profile_headlinebar_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_group_ic" />
+
+        <ImageView
+            android:id="@+id/iv_user_profile_headlinebar_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/star_user_ic" />
+    </LinearLayout>
+
+</LinearLayout>

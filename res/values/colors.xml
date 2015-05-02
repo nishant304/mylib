@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="translucent">#88000000</color>
+    <color name="footer_nav_bar_color">#912b8c</color>
+    <color name="browse_screen_text_color">#221f1f</color>
+    <color name="map_circle_border_green">#00a04a</color>
+    <color name="map_circle_border_gray">#bcbec0</color>
+    <color name="map_circle_border_blue">#45a4d3</color>
+    <color name="avid_user_profile_username_headline_color">#221f1f</color>
+    <color name="user_profile_last_seen_time_color">#42a4d5</color>
+    <color name="user_profile_label_color">#010101</color>
+    <color name="user_profile_detail_color">#45a3d3</color>
+    <color name="my_profile_detail_color">#45a3d3</color>
+    <color name="user_profile_distance_color">#59595b</color>
+    <color name="user_profile_for_your_eyes_only_text_color">#59595b</color>
+    <color name="wink_count_color">#59595b</color>
+    <color name="white_color_code">#FFFFFF</color>
+    <color name="black_color_code">#000000</color>
+    <color name="translucent_color_code">#66231f20</color>
+    <color name="range_bar_connecting_line_color">#aadff5</color>
+
+    <!-- for testing -->
+    <color name="green_color">#00CD00</color>
+    <color name="blue_color">#003EFF</color>
+    <color name="red_coat_code">#B81324</color>
+    <color name="yellow_code">#CDD704</color>
+
+    <!-- wink fragement -->
+
+    <color name="wink_user_name_color">#231f20</color>
+    <!-- Location Drawer -->
+    <color name="location_drawer_name_color">#010202</color>
+    <color name="location_drawer_location_name_color">#221f1f</color>
+    <color name="location_drawer_list_header_color">#bcbebf</color>
+    <color name="location_drawer_desc_color">#5a5b5c</color>
+
+    <!-- Setting Color -->
+
+    <color name="settings_ac_verification_color">#010101</color>
+    <color name="settings_verification_yr_ac_color">#6d6e70</color>
+    <color name="settings_verify_now_bg_color">#010101</color>
+    <color name="settings_mancruch_color">#45a3d3</color>
+    <color name="transparent_color_code">#00000000</color>
+    <color name="red">#EE4036</color>
+    <color name="red_selected">#A72D26</color>
+    <color name="green">#37B34A</color>
+    <color name="green_selected">#267D34</color>
+    <color name="grey_color">#666</color>
+
+    <!-- account retrieval screen -->
+    <color name="acc_retrieval_text_color">#5a5b5d</color>
+
+    <!-- passcode screen -->
+
+    <color name="passcode_edittext_color">#010101</color>
+
+</resources>

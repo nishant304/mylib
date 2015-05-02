@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/small_padding" >
+
+    <CheckBox
+        android:id="@+id/adapter_filter_child_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_filter_button"
+        android:button="@null" />
+
+    <com.wecamchat.aviddev.util.view.CustomTextView
+        android:id="@+id/adapter_filter_child_textview"
+        style="@style/wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/adapter_filter_child_radio_button"
+        android:paddingLeft="@dimen/small_padding"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/layout_filter_expandable_list_textsize"
+        app:ctypeface="GlyphaLTStd.otf" />
+
+</RelativeLayout>

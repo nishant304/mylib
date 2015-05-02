@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="6dp" >
+
+    <FrameLayout
+        android:id="@+id/fl_custom_browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/iv_custom_browser_user_image"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/im_custom_browser_user_border"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+             />
+
+        <ImageView
+            android:id="@+id/im_custom_browser_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:contentDescription="@null"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_custom_browser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_custom_browser_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@color/browse_screen_text_color"
+            android:textSize="@dimen/browse_screen_name_text_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_custom_browser_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:textColor="@color/browse_screen_text_color"
+            android:textSize="@dimen/browse_screen_distance_text_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+    </LinearLayout>
+
+</RelativeLayout>

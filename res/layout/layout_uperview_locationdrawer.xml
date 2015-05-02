@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_location_drawer_first"
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/location_drawer_margin"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/location_drawer_margin"
+            android:layout_weight="1.4"
+            android:orientation="vertical" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/wrap_content"
+                android:text="Location Name Here"
+                android:textColor="@color/location_drawer_location_name_color"
+                android:textSize="@dimen/location_drawer_sp_19"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/wrap_content"
+                android:text="123 Somestreet Rd, San Francisco, CA"
+                android:textColor="@color/location_drawer_name_color"
+                android:textSize="@dimen/location_drawer_sp_12"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <LinearLayout
+                style="@style/wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/location_drawer_margin"
+                android:layout_marginTop="@dimen/location_drawer_margin"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/CustomRatingBarMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    style="@style/wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/location_drawer_margin_5"
+                    android:singleLine="true"
+                    android:text="3 Stars | 54 Ratings"
+                    android:textColor="@color/location_drawer_name_color"
+                    android:textSize="@dimen/location_drawer_desc_sp"
+                    app:ctypeface="GlyphaLTStd.otf" />
+            </LinearLayout>
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="User can put a small description or notes about the location here.Limit characters to a few hundred."
+                android:textColor="@color/location_drawer_name_color"
+                android:textSize="@dimen/location_drawer_sp_13"
+                app:ctypeface="GlyphaLTStd.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/location_drawer_margin"
+            android:paddingTop="@dimen/location_drawer_header_height" >
+
+            <com.wecamchat.aviddev.util.view.CircularImageView
+                android:layout_width="@dimen/location_drawer_user_image"
+                android:layout_height="@dimen/location_drawer_user_image"
+                android:layout_gravity="right"
+                android:src="@drawable/user_image"
+                app:border_color="@color/location_drawer_list_header_color" />
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/wrap_content"
+                android:layout_marginRight="@dimen/location_drawer_margin_5"
+                android:gravity="center_horizontal"
+                android:text="Sam Smith"
+                android:textColor="@color/location_drawer_location_name_color"
+                android:textSize="@dimen/location_drawer_sp_14"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:layout_marginRight="@dimen/location_drawer_margin_5"
+                android:layout_marginTop="@dimen/location_drawer_margin_5"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    style="@style/wrap_content"
+                    android:text="Posted On"
+                    android:textColor="@color/location_drawer_name_color"
+                    android:textSize="@dimen/location_drawer_desc_sp"
+                    app:border_color="@color/blue_color"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    style="@style/wrap_content"
+                    android:text="11/21/14"
+                    android:textColor="@color/location_drawer_name_color"
+                    android:textSize="@dimen/location_drawer_desc_sp"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    style="@style/wrap_content"
+                    android:text="10:32 PM-PST"
+                    android:textColor="@color/location_drawer_name_color"
+                    android:textSize="@dimen/location_drawer_desc_sp"
+                    app:ctypeface="GlyphaLTStd.otf" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

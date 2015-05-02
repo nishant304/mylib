@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- filter screen arrays -->
+    <string-array name="filter_up_for_array">
+        <item>All</item>
+        <item>Just Chatting</item>
+        <item>Video Calls</item>
+        <item>Friendships</item>
+        <item>Relationships</item>
+        <item>Right Now</item>
+    </string-array>
+    <string-array name="filter_orientation_array">
+        <item>All</item>
+        <item>Gay</item>
+        <item>Bisexual</item>
+        <item>Bi-Curious</item>
+        <item>Open Minded</item>
+        <item>Transgender</item>
+    </string-array>
+    <string-array name="filter_body_type_array">
+        <item>All</item>
+        <item>Slim</item>
+        <item>Mascular</item>
+        <item>Athletic</item>
+        <item>Heavy Set</item>
+        <item>Big Boy</item>
+    </string-array>
+    <string-array name="filter_temperament_array">
+        <item>All</item>
+        <item>Shy</item>
+        <item>Outgoing</item>
+        <item>Over the top</item>
+    </string-array>
+    <string-array name="filter_size_array">
+        <item>All</item>
+        <item>Small</item>
+        <item>Average</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    <string-array name="filter_hiv_status_array">
+        <item>All</item>
+        <item>Negative</item>
+        <item>Positive</item>
+        <item>Don\'t Know</item>
+    </string-array>
+    <string-array name="filter_height_array">
+        <item>All</item>
+        <item>Really Short</item>
+        <item>Short</item>
+        <item>Average</item>
+        <item>Tall</item>
+        <item>Really Tall</item>
+    </string-array>
+    <string-array name="filter_drink_array">
+        <item>All</item>
+        <item>Yes</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="filter_eye_color_array">
+        <item>All</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Brown</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Hazel</item>
+        <item>Multicolor</item>
+    </string-array>
+    <string-array name="filter_role_array">
+        <item>All</item>
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Versatile</item>
+    </string-array>
+    <string-array name="filter_persona_array">
+        <item>All</item>
+        <item>Twink</item>
+        <item>Butch</item>
+        <item>Bear</item>
+        <item>Daddy</item>
+        <item>Clean Cut</item>
+        <item>Jock</item>
+        <item>Leather</item>
+        <item>Otter</item>
+        <item>Rugged</item>
+        <item>Trans</item>
+    </string-array>
+    <string-array name="filter_body_hair_array">
+        <item>All</item>
+        <item>Smooth</item>
+        <item>Trimmed</item>
+        <item>Shaved</item>
+        <item>Light Hair</item>
+        <item>Hairy</item>
+    </string-array>
+    <string-array name="filter_ethnicity_array">
+        <item>All</item>
+        <item>Black/African</item>
+        <item>Hispanic</item>
+        <item>Caucasian</item>
+        <item>East Indian</item>
+        <item>Middle Eastern</item>
+        <item>Native American</item>
+        <item>Pacific Islander</item>
+        <item>Mixed Race</item>
+    </string-array>
+    <string-array name="filter_out_to_array">
+        <item>All</item>
+        <item>Friends</item>
+        <item>Family</item>
+        <item>Co-Workers</item>
+    </string-array>
+    <string-array name="filter_smoke_array">
+        <item>All</item>
+        <item>Yes</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="filter_hair_color_array">
+        <item>All</item>
+        <item>Bald</item>
+        <item>Auburn</item>
+        <item>Black</item>
+        <item>Blonde</item>
+        <item>Brown</item>
+        <item>Grey</item>
+        <item>Red</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="filter_cut_array">
+        <item>All</item>
+        <item>Cut</item>
+        <item>Uncut</item>
+    </string-array>
+
+    <!-- profile screen arrays -->
+    <string-array name="profile_up_for_array">
+        <item>Just Chatting</item>
+        <item>Video Calls</item>
+        <item>Friendships</item>
+        <item>Relationships</item>
+        <item>Right Now</item>
+    </string-array>
+    <string-array name="profile_orientation_array">
+        <item>Gay</item>
+        <item>Bisexual</item>
+        <item>Bi-Curious</item>
+        <item>Open Minded</item>
+        <item>Transgender</item>
+    </string-array>
+    <string-array name="profile_body_type_array">
+        <item>Slim</item>
+        <item>Mascular</item>
+        <item>Athletic</item>
+        <item>Heavy Set</item>
+        <item>Big Boy</item>
+    </string-array>
+    <string-array name="profile_temperament_array">
+        <item>Shy</item>
+        <item>Outgoing</item>
+        <item>Over the top</item>
+    </string-array>
+    <string-array name="profile_size_array">
+        <item>Small</item>
+        <item>Average</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    <string-array name="profile_hiv_status_array">
+        <item>Negative</item>
+        <item>Positive</item>
+        <item>Don\'t Know</item>
+    </string-array>
+    <string-array name="profile_height_array">
+        <item>Really Short</item>
+        <item>Short</item>
+        <item>Average</item>
+        <item>Tall</item>
+        <item>Really Tall</item>
+    </string-array>
+    <string-array name="profile_drink_array">
+        <item>Yes</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="profile_eye_color_array">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Brown</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Hazel</item>
+        <item>Multicolor</item>
+    </string-array>
+    <string-array name="profile_role_array">
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Versatile</item>
+    </string-array>
+    <string-array name="profile_persona_array">
+        <item>Twink</item>
+        <item>Butch</item>
+        <item>Bear</item>
+        <item>Daddy</item>
+        <item>Clean Cut</item>
+        <item>Jock</item>
+        <item>Leather</item>
+        <item>Otter</item>
+        <item>Rugged</item>
+        <item>Trans</item>
+    </string-array>
+    <string-array name="profile_body_hair_array">
+        <item>Smooth</item>
+        <item>Trimmed</item>
+        <item>Shaved</item>
+        <item>Light Hair</item>
+        <item>Hairy</item>
+    </string-array>
+    <string-array name="profile_ethnicity_array">
+        <item>Black/African</item>
+        <item>Hispanic</item>
+        <item>Caucasian</item>
+        <item>East Indian</item>
+        <item>Middle Eastern</item>
+        <item>Native American</item>
+        <item>Pacific Islander</item>
+        <item>Mixed Race</item>
+    </string-array>
+    <string-array name="profile_out_to_array">
+        <item>Friends</item>
+        <item>Family</item>
+        <item>Co-Workers</item>
+    </string-array>
+    <string-array name="profile_smoke_array">
+        <item>Yes</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="profile_hair_color_array">
+        <item>Bald</item>
+        <item>Auburn</item>
+        <item>Black</item>
+        <item>Blonde</item>
+        <item>Brown</item>
+        <item>Grey</item>
+        <item>Red</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="profile_cut_array">
+        <item>Cut</item>
+        <item>Uncut</item>
+    </string-array>
+
+</resources>

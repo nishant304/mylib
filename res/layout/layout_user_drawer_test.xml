@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scroolview_user_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_userdrawer_full_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff9900"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_trans_userdrawer_full_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:alpha="0.3"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_white_bg_userdrawer_full_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_trans_userdrawer_full_ui"
+                    android:orientation="vertical" />
+
+                <com.wecamchat.aviddev.util.view.CircularImageView
+                    android:id="@+id/iv_userdrawer_userimage_full_ui"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_alignTop="@+id/tv_white_bg_userdrawer_full_ui"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-70dp"
+                    android:src="@drawable/user_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/iv_userdrawer_userimage_full_ui"
+                    android:layout_alignTop="@+id/iv_userdrawer_userimage_full_ui"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/user_theme_ic" />
+
+                <ImageButton
+                    style="@style/wrap_content"
+                    android:layout_below="@+id/iv_userdrawer_userimage_full_ui"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/list_dot" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_userdrawer_half_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_trans_userdrawer_half_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:alpha="0.3"
+                    android:background="#231f20"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_white_bg_userdrawer_half_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_trans_userdrawer_half_ui"
+                    android:background="@color/white_color_code"
+                    android:orientation="vertical" />
+
+                <com.wecamchat.aviddev.util.view.CircularImageView
+                    android:id="@+id/iv_userdrawer_userimage_half_ui"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_alignTop="@+id/tv_white_bg_userdrawer_half_ui"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-70dp"
+                    android:src="@drawable/user_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/iv_userdrawer_userimage_half_ui"
+                    android:layout_alignTop="@+id/iv_userdrawer_userimage_half_ui"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/user_theme_ic" />
+
+                <ImageButton
+                    style="@style/wrap_content"
+                    android:layout_below="@+id/iv_userdrawer_userimage_half_ui"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/list_dot" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_userdrawer_userimage_half_ui"
+                    android:layout_marginTop="74dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/star_user_ic" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/user_group_ic" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_userdrawer_include_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_userdrawer_full_ui"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/include_user_drawer_1_ui_full_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_friend_profile_headline_bar"
+                    android:background="@color/white_color_code" />
+
+                <include
+                    android:id="@+id/include_user_drawer_2_ui_full_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_user_drawer_1_ui_full_ui"
+                    layout="@layout/layout_friends_profile_body"
+                    android:background="@color/white_color_code" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_userdrawer_include_half"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_userdrawer_half_ui" >
+
+                <include
+                    android:id="@+id/include_user_drawer_1_ui_half_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_friend_profile_headline_bar"
+                    android:background="@color/white_color_code" />
+
+                <include
+                    android:id="@+id/include_user_drawer_2_ui_half_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_user_drawer_1_ui_half_ui"
+                    layout="@layout/layout_friends_profile_body"
+                    android:background="@color/white_color_code" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/inc_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/layout_friends_profile_right_bar"
+        android:background="@color/white_color_code" />
+
+</RelativeLayout>

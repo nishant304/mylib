@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color_code"
+    tools:context=".TermsAndConditionsActivity" >
+
+    <LinearLayout
+        android:id="@+id/activity_terms_and_conditions_footerview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/translucent_color_code"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_padding"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/activity_terms_and_conditions_decline_button"
+            style="@style/wrap_width_weight.red_rounded_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_call_pop_up_accept_decline_button_padding"
+            android:paddingRight="@dimen/activity_call_pop_up_accept_decline_button_padding"
+            android:text="@string/decline_txt"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/activity_terms_and_conditions_accept_button"
+            style="@style/wrap_width_weight.green_rounded_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_call_pop_up_accept_decline_button_padding"
+            android:paddingRight="@dimen/activity_call_pop_up_accept_decline_button_padding"
+            android:text="@string/accept_txt"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/activity_terms_and_conditions_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_terms_and_conditions_footerview"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" />
+
+</RelativeLayout>

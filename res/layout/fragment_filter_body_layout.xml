@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_filter_root_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_filter_text_padding"
+            android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+            android:paddingRight="@dimen/medium_padding"
+            android:paddingTop="@dimen/large_padding"
+            android:weightSum="3" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/filter_location_label"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/layout_my_profile_details_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:id="@+id/fragment_filter_location_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="Current Location"
+                android:textColor="@color/user_profile_detail_color"
+                android:textSize="@dimen/layout_filter_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_filter_rangeBar_padding"
+            android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+            android:paddingTop="@dimen/layout_filter_rangeBar_padding"
+            android:weightSum="3" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/filter_range_label"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/layout_my_profile_details_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.seekbar.RangeBar
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragment_filter_location_range_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_filter_rangeBar_padding"
+            android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+            android:paddingTop="@dimen/layout_filter_rangeBar_padding"
+            android:weightSum="3" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/filter_age_label"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/layout_my_profile_details_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.seekbar.RangeBar
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragment_filter_age_range_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_filter_text_padding"
+            android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+            android:paddingRight="@dimen/medium_padding"
+            android:paddingTop="@dimen/layout_filter_text_padding" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filter_hide_inactive_user_label"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/layout_my_profile_details_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <CheckBox
+                android:id="@+id/fragment_filter_hide_inactive_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:background="@drawable/selector_filter_toggle_button"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_filter_text_padding"
+            android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+            android:paddingRight="@dimen/medium_padding"
+            android:paddingTop="@dimen/layout_filter_text_padding" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filter_hide_location_label"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/layout_my_profile_details_label_textsize"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <CheckBox
+                android:id="@+id/fragment_filter_hide_location_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:background="@drawable/selector_filter_toggle_button"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/small_padding"
+                android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingTop="@dimen/small_padding" >
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_up_for_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_up_for_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_up_for_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_up_for_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_orientation_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_orientation_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_orientation_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_orientation_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_body_type_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_body_type_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_body_type_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_body_type_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_temperament_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_temperament_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_temperament_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_temperament_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_size_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_size_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_size_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_size_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_hiv_status_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_hiv_status_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_hiv_status_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_hiv_status_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_height_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_height_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_height_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_height_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_drink_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_drink_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_drink_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_drink_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_eye_color_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_eye_color_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_eye_color_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_eye_color_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/small_padding"
+                android:paddingLeft="@dimen/layout_filter_left_vertical_padding"
+                android:paddingTop="@dimen/small_padding" >
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_role_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_role_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_role_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_role_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_persona_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_persona_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_persona_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_persona_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_body_hair_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_body_hair_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_body_hair_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_body_hair_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_cut_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_cut_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_cut_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_cut_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_ethnicity_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_ethnicity_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_ethnicity_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_ethnicity_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_out_to_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_out_to_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_out_to_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_out_to_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_smoke_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_smoke_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_smoke_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_smoke_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_hair_color_label"
+                    style="@style/fragment_filter_label_style"
+                    android:text="@string/filter_hair_color_label"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:id="@+id/fragment_filter_hair_color_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/user_profile_detail_color"
+                    android:textSize="@dimen/layout_my_profile_details_textsize"
+                    app:ctypeface="GlyphaLTStd.otf" />
+
+                <ExpandableListView
+                    android:id="@+id/fragment_filter_hair_color_listView"
+                    style="@style/fragment_filter_expandable_list_style" >
+                </ExpandableListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

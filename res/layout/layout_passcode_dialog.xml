@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layout_passcode_center_layout"
+        style="@style/wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/large_padding"
+        android:background="@drawable/passcode_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            android:id="@+id/tv_passcode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passcode_label_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/acc_retrieval_lable_size"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <LinearLayout
+            android:id="@+id/layout_edittext_boxes"
+            style="@style/wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/layout_passcode_first_digit_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/input_code_field"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="@color/passcode_edittext_color"
+                android:textSize="@dimen/passcode_entered_text_size" />
+
+            <EditText
+                android:id="@+id/layout_passcode_second_digit_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/input_code_field"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="@color/passcode_edittext_color"
+                android:textSize="@dimen/passcode_entered_text_size" />
+
+            <EditText
+                android:id="@+id/layout_passcode_third_digit_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/input_code_field"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="@color/passcode_edittext_color"
+                android:textSize="@dimen/passcode_entered_text_size" />
+
+            <EditText
+                android:id="@+id/layout_passcode_fourth_digit_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/input_code_field"
+                android:gravity="center"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="@color/passcode_edittext_color"
+                android:textSize="@dimen/passcode_entered_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.wecamchat.aviddev.util.view.CustomTextView
+        android:id="@+id/tv_show_error_message"
+        style="@style/wrap_content"
+        android:layout_below="@id/layout_passcode_center_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white_color_code"
+        android:textSize="@dimen/passcode_error_message_text_size"
+        android:visibility="invisible"
+        app:ctypeface="GlyphaLTStd.otf" />
+
+    <ImageView
+        android:id="@+id/passcode_cross_button"
+        style="@style/wrap_content"
+        android:layout_alignRight="@id/layout_passcode_center_layout"
+        android:layout_below="@id/layout_passcode_center_layout"
+        android:layout_marginTop="@dimen/passcode_cross_button_margin_top"
+        android:background="@drawable/account_retrieval_cross_ic" />
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_color_code"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/add_location_drawer_margin_8"
+        android:paddingLeft="@dimen/add_location_drawer_margin_20"
+        android:paddingRight="@dimen/add_location_drawer_margin_20"
+        android:paddingTop="@dimen/add_location_drawer_margin_10" >
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/location_drawer_margin_5"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:background="@drawable/location_add_ic" />
+
+            <com.wecamchat.aviddev.util.view.CustomEditText
+                android:id="@+id/et_add_location_address"
+                style="@style/match_parent"
+                android:layout_marginLeft="@dimen/add_location_drawer_margin_10"
+                android:background="@drawable/location_drawer_edit_text_square"
+                android:gravity="left|top"
+                android:hint="50 New Mangomery Street San Francisco CA 91234"
+                android:lines="4"
+                android:padding="@dimen/add_location_drawer_margin_8"
+                android:textColor="#5a5b5c"
+                android:textColorHint="#5a5b5c"
+                android:textSize="@dimen/add_location_drawer_sp_12"
+                app:ctypeface="GlyphaLTStd.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/location_drawer_margin_5"
+            android:orientation="vertical" >
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/add_location_drawer_margin_10"
+                android:text="Name Location"
+                android:textColor="#020303"
+                android:textSize="@dimen/add_location_drawer_sp_13"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomEditText
+                style="@style/match_parent"
+                android:background="@drawable/location_drawer_edit_text_square"
+                android:gravity="left|top"
+                android:hint="Write an optional short review."
+                android:lines="1"
+                android:padding="@dimen/add_location_drawer_margin_8"
+                android:textColor="#5a5b5c"
+                android:textColorHint="#5a5b5c"
+                android:textSize="@dimen/add_location_drawer_sp_12"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomTextView
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/add_location_drawer_margin_10"
+                android:text="Description"
+                android:textColor="#020303"
+                android:textColorHint="#5a5b5c"
+                android:textSize="@dimen/add_location_drawer_sp_13"
+                app:ctypeface="GlyphaLTStd.otf" />
+
+            <com.wecamchat.aviddev.util.view.CustomEditText
+                style="@style/match_parent"
+                android:background="@drawable/location_drawer_edit_text_square"
+                android:gravity="left|top"
+                android:hint="User can put a small description or notes about the location here.Limit characters to a few hundred."
+                android:lines="4"
+                android:padding="@dimen/add_location_drawer_margin_8"
+                android:textColor="#5a5b5c"
+                android:textColorHint="#5a5b5c"
+                android:textSize="@dimen/add_location_drawer_sp_12"
+                app:ctypeface="GlyphaLTStd.otf" />
+        </LinearLayout>
+
+        <com.wecamchat.aviddev.util.view.CustomTextView
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/add_location_drawer_margin_10"
+            android:text="Rate Location"
+            android:textSize="@dimen/add_location_drawer_sp_13"
+            app:ctypeface="GlyphaLTStd.otf" />
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/location_drawer_margin_5"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/CustomRatingBarLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3.5" />
+
+                <com.wecamchat.aviddev.util.view.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Tap to set"
+                    android:textColor="#bcbebf"
+                    android:textSize="8sp"
+                    app:ctypeface="GlyphaLTStd.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_add_location_cross_btn_ic"
+                    style="@style/wrap_content"
+                    android:background="@drawable/cross_btn_ic" />
+
+                <ImageView
+                    android:id="@+id/iv_add_location_add_btn_ic"
+                    style="@style/wrap_content"
+                    android:layout_marginLeft="@dimen/add_location_drawer_margin_10"
+                    android:background="@drawable/tick_btn_ic" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

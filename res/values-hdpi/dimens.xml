@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <!-- layout_footer -->
+    <dimen name="layout_footer_drawable_padding">-20dp</dimen>
+    
+    <dimen  name="round_circle_small_icon_margin">42dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/user_changepic_ic" android:state_selected="true"/>
+    <item android:drawable="@drawable/user_change_pic_disable_ic"/>
+
+</selector>
